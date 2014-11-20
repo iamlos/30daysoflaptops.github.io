@@ -13,6 +13,12 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  .container {
+    margin: 0 10px;
+  }
+}
+
 #intro {
   background: url("../img/winter-bg.png") no-repeat 0 center;
   -webkit-background-size: cover;
@@ -20,6 +26,12 @@ img {
   -o-background-size: cover;
   background-size: cover;
   height: 555px;
+}
+
+@media (max-width: 600px) {
+  #intro {
+    padding: 0 15px;
+  }
 }
 
 #intro img {
@@ -330,7 +342,7 @@ form {
 
 @media (max-width: 600px) {
   #background p {
-    padding: 0 80px;
+    padding: 0 20px;
   }
 }
 
