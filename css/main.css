@@ -187,6 +187,20 @@ body {
   margin-top: 0;
 }
 
+#pledge button {
+  background: #433F4B;
+  border: none;
+  border-radius: 3px;
+  line-height: 43px;
+  padding: 0 15px;
+  float: left;
+  margin-top: 23px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .form-wrap {
   width: 820px;
   margin: 0 auto;
@@ -220,9 +234,12 @@ form {
   margin-bottom: 4px;
 }
 
-#email,
 #company {
-  width: 280px;
+  width: 260px;
+}
+
+#email {
+  width: 240px;
 }
 
 #laptops {
