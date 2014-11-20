@@ -26,7 +26,7 @@ img {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 583px;
+  height: 710px;
   position: relative;
 }
 
@@ -51,11 +51,12 @@ img {
   bottom: 0;
   width: 100%;
   left: 0;
+  padding: 30px 0 15px;
 }
 
 #intro p {
   margin: 0 auto;
-  padding: 30px 15px;
+  padding-bottom: 15px;
   max-width: 465px;
   font-size: 21px;
   color: rgba(0,0,0,0.72);
