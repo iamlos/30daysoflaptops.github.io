@@ -227,7 +227,7 @@ img {
   line-height: 43px;
   padding: 0 15px;
   float: left;
-  margin-top: 23px;
+  margin-top: 22px;
   font-size: 15px;
   color: white;
   cursor: pointer;
@@ -260,9 +260,10 @@ form {
   float: left;
   border-radius: 3px;
   border: 1px solid #979797;
-  -moz-box-shadow:    inset 0px 1px 3px 0px rgba(0,0,0,0.50);
-  box-shadow:         inset 0px 1px 3px 0px rgba(0,0,0,0.50);
-  padding: 0 6px;
+  -moz-box-shadow:    inset 0px 1px 3px 0px rgba(0,0,0,0.30);
+  box-shadow:         inset 0px 1px 3px 0px rgba(0,0,0,0.30);
+  padding: 0 7px;
+  font-size: 18px;
 }
 
 @media (max-width: 720px) {
