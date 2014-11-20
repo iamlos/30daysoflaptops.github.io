@@ -42,8 +42,11 @@ body {
   width: 780px;
 }
 
+#pledge-list .group:nth-child(even) {
+  background: #F2F2F2;
+}
+
 .pledge {
-  padding: 7px 0;
   overflow: hidden;
 }
 
@@ -57,7 +60,7 @@ body {
   width: 55%;
   text-align: left;
   border-bottom: 1px solid #DBDBDB;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 
 .pledge .laptops {
@@ -67,15 +70,16 @@ body {
   line-height: 46px;
   float: left;
   border-bottom: 1px solid #DBDBDB;
-  width: 35%;
+  width: 34%;
   text-align: left;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 
 .pledge .calendar {
   float: left;
   position: relative;
   visibility: hidden;
+  margin: 15px 0 0 10px;
 }
 
 .pledge:first-child .calendar {
