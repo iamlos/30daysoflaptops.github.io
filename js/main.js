@@ -2,7 +2,7 @@ var app = angular.module("myApp", ["firebase"]);
 
 app.controller("SampleCtrl", ["$scope", "$firebase",
   function($scope, $firebase) {
-    var ref = new Firebase("https://sweltering-heat-5062.firebaseio.com/");
+    var ref = new Firebase("https://30daysoflaptops.firebaseio.com/");
 
     $scope.pledges = $firebase(ref).$asArray();
 
