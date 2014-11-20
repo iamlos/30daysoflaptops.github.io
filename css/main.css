@@ -26,14 +26,6 @@ img {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 655px;
-  position: relative;
-}
-
-@media (max-width: 600px) {
-  #intro {
-    padding: 0 15px;
-  }
 }
 
 .graphic-wrap {
@@ -47,11 +39,9 @@ img {
 
 .intro-wrap {
   background: rgba(255,255,255,0.35);
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  left: 0;
   padding: 30px 0 15px;
+  margin-top: -15px;
 }
 
 #intro p {
