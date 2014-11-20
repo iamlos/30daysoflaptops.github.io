@@ -78,13 +78,19 @@
     <h2 id="total-pledges">{{totalLaptops()}}
       <span class="subhead">laptops pledged so far!</span>
     </h2>
-    <ul ng-repeat="(num, pledgeGroup) in groupedPledges()">
-      Date: {{ num }}
-      <li ng-repeat="pledge in pledgeGroup">
-        <span>{{pledge.laptops}} laptops -</span>
-        <span>{{pledge.company}}</span>
-      </li>
-    </ul>
+    <div id="pledge-list">
+      <div class="group" ng-repeat="(num, pledgeGroup) in groupedPledges()">
+        <div class="pledge" ng-repeat="pledge in pledgeGroup">
+          <div class="calendar">
+            <img src="img/calendar-icon.png" />
+            <span class="month">{{pledge.pledgedAt | date:"MMM" | uppercase }}</span>
+            <span class="day">{{pledge.pledgedAt | date:"dd" }}</span>
+          </div>
+          <span class="company">{{pledge.company}}</span>
+          <span class="laptops">{{pledge.laptops}}</span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="background">
