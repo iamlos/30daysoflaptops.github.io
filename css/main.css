@@ -204,6 +204,12 @@ img {
   padding: 40px;
 }
 
+@media (max-width: 600px) {
+  #pledge {
+    padding: 30px 15px;
+  }
+}
+
 #pledge h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -317,7 +323,7 @@ form {
   font-weight: bold;
   font-size: 50px;
   color: #4A4A4A;
-  line-height: 66px;
+  line-height: 56px;
   margin: 0;
 }
 
