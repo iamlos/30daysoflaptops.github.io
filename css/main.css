@@ -269,6 +269,10 @@ form {
   .form-group input {
     width: 100% !important;
   }
+
+  #pledge button {
+    width: 100%;
+  }
 }
 
 .form-group label {
@@ -347,7 +351,7 @@ form {
   text-align: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   #background p {
     padding: 0 20px;
   }
