@@ -232,7 +232,7 @@ img {
 }
 
 #pledge button {
-  background: #ffad00;
+  background: #202020;
   border: none;
   border-radius: 3px;
   line-height: 43px;
@@ -240,7 +240,7 @@ img {
   float: left;
   margin-top: 22px;
   font-size: 15px;
-  color: #333;
+  color: #eee;
   cursor: pointer;
   font-weight: bold;
 }
