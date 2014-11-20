@@ -26,7 +26,7 @@ img {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 555px;
+  height: 583px;
   position: relative;
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 .graphic-wrap {
-  max-width: 460px;
+  max-width: 550px;
   margin: 0 auto;
 }
 
