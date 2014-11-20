@@ -80,7 +80,7 @@
     </h2>
     <div id="pledge-list">
       <div class="group" ng-repeat="(num, pledgeGroup) in groupedPledges()">
-        <div class="pledge" ng-repeat="pledge in pledgeGroup">
+        <div class="pledge" ng-repeat="pledge in pledgeGroup | orderBy:pledgedAt">
           <div class="calendar">
             <img src="img/calendar-icon.png" />
             <span class="month">{{pledge.pledgedAt | date:"MMM" | uppercase }}</span>
