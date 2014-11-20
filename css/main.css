@@ -359,6 +359,7 @@ form {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
   height: 683px;
 }
 
@@ -368,6 +369,7 @@ form {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
   height: 442px;
 }
 
