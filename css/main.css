@@ -53,6 +53,12 @@ img {
   line-height: 28px;
 }
 
+@media (max-width: 600px) {
+  #intro p {
+    font-size: 18px;
+  }
+}
+
 .divider {
   background: #D0021B;
   border: 1px solid #979797;
