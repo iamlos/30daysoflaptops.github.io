@@ -293,3 +293,27 @@ form {
   background-size: cover;
   height: 683px;
 }
+
+#footer {
+  background: url("../img/brought-to-you-by.png") no-repeat 0 -105px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 442px;
+}
+
+#footer h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 26px;
+  padding-left: 50%;
+  padding-top: 6%;
+}
+
+#footer .logo {
+  padding-left: 51%;
+  padding-top: 15px;
+}
