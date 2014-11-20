@@ -232,7 +232,7 @@ img {
 }
 
 #pledge button {
-  background: #433F4B;
+  background: #ffad00;
   border: none;
   border-radius: 3px;
   line-height: 43px;
@@ -240,7 +240,7 @@ img {
   float: left;
   margin-top: 22px;
   font-size: 15px;
-  color: white;
+  color: #333;
   cursor: pointer;
   font-weight: bold;
 }
@@ -380,7 +380,7 @@ form {
 }
 
 #footer {
-  background: url("../img/brought-to-you-by.png") no-repeat 0 -105px;
+  background: url("../img/footer.png") no-repeat 0 -105px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
