@@ -9,9 +9,10 @@ app.controller("SampleCtrl", ["$scope", "$firebase",
     $scope.groupedPledges = [];
 
     groupPledges = function() {
-      $scope.groupedPledges =  _.groupBy($scope.pledges, function(pledge) {
+      var grouped = _.groupBy($scope.pledges, function(pledge) {
         return moment(pledge.pledgedAt).format("MMM Do YY");
       });
+      $scope.groupedPledges =  _.toArray(grouped).reverse();
     };
 
     $scope.$watchCollection('pledges', groupPledges);
