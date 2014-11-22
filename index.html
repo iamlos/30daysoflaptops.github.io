@@ -92,7 +92,7 @@
       <span class="subhead">laptops pledged so far!</span>
     </h2>
     <div id="pledge-list">
-      <div class="group" ng-repeat="(num, pledgeGroup) in groupedPledges()">
+      <div class="group" ng-repeat="(num, pledgeGroup) in groupedPledges">
         <div class="pledge" ng-repeat="pledge in pledgeGroup | orderBy:pledgedAt">
           <div class="calendar">
             <img src="img/calendar-icon.png" />

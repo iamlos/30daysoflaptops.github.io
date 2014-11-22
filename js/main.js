@@ -6,11 +6,15 @@ app.controller("SampleCtrl", ["$scope", "$firebase",
 
     $scope.pledges = $firebase(ref).$asArray();
 
-    $scope.groupedPledges = function() {
-      return _.groupBy($scope.pledges, function(pledge) {
+    $scope.groupedPledges = [];
+
+    groupPledges = function() {
+      $scope.groupedPledges =  _.groupBy($scope.pledges, function(pledge) {
         return moment(pledge.pledgedAt).format("MMM Do YY");
       });
     };
+
+    $scope.$watchCollection('pledges', groupPledges);
 
     $scope.addPledge = function(email, company, laptops) {
       pledge = {
