@@ -92,6 +92,11 @@
       <span class="subhead">laptops pledged so far!</span>
     </h2>
     <div id="pledge-list">
+      <div id="pledge-headers">
+        <div class="calendar">&nbsp;</div>
+        <div class="company">Company</div>
+        <div class="laptops">Laptops</div>
+      </div>
       <div class="group" ng-repeat="pledgeGroup in groupedPledges">
         <div class="pledge" ng-repeat="pledge in pledgeGroup | orderBy:pledgedAt">
           <div class="calendar">

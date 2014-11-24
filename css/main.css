@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   text-align: center;
   margin: 0;
@@ -65,12 +73,42 @@ img {
   height: 16px;
 }
 
-#pledge-list {
-  margin: 45px auto;
-  width: 780px;
+#pledge-headers {
+  overflow: auto;
 }
 
-#pledge-list .group:nth-child(even) {
+#pledge-headers .calendar,
+#pledge-headers .company,
+#pledge-headers .laptops {
+  float: left;
+  border-bottom: 3px solid #DBDBDB;
+  text-align: left;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  color: #C3C3C3;
+  line-height: 21px;
+}
+
+#pledge-headers .calendar {
+  width: 11%;
+  border-color: transparent;
+}
+
+#pledge-headers .company {
+  width: 58%;
+  margin-right: 2%;
+}
+
+#pledge-headers .laptops {
+  width: 29%;
+}
+
+#pledge-list {
+  margin: 45px auto;
+  max-width: 780px;
+}
+
+#pledge-list .group:nth-child(odd) {
   background: #F2F2F2;
 }
 
@@ -84,11 +122,13 @@ img {
   color: #231F20;
   line-height: 46px;
   float: left;
-  margin-left: 25px;
   width: 60%;
   text-align: left;
   border-bottom: 1px solid #DBDBDB;
   padding: 15px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pledge .laptops {
@@ -107,7 +147,8 @@ img {
   float: left;
   position: relative;
   visibility: hidden;
-  margin: 15px 0 0 10px;
+  padding: 15px 3% 0 10px;
+  width: 11%;
 }
 
 .pledge:first-child .calendar {
@@ -116,8 +157,8 @@ img {
 
 .calendar .month {
   position: absolute;
-  top: 4px;
-  left: 12px;
+  top: 26%;
+  left: 26%;
   color: white;
   font-size: 12px;
   font-weight: 900;
@@ -125,11 +166,29 @@ img {
 
 .calendar .day {
   position: absolute;
-  top: 23px;
-  left: 12px;
+  top: 52%;
+  left: 28%;
   font-weight: 900;
   font-size: 19px;
   color: #020303;
+}
+
+@media (max-width: 600px) {
+  .pledge .company {
+    font-size: 18px;
+  }
+
+  .pledge .laptops {
+    font-size: 18px;
+  }
+
+  .calendar img {
+    visibility: hidden;
+  }
+
+  .calendar .month {
+    color: black;
+  }
 }
 
 #explanation {
@@ -387,6 +446,12 @@ form {
   background-size: cover;
   background-position: center;
   height: 442px;
+}
+
+@media (max-width: 720px) {
+  #footer {
+    height: 340px;
+  }
 }
 
 #footer h2 {
