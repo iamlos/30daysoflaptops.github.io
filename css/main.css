@@ -73,36 +73,6 @@ img {
   height: 16px;
 }
 
-#pledge-headers {
-  overflow: auto;
-}
-
-#pledge-headers .calendar,
-#pledge-headers .company,
-#pledge-headers .laptops {
-  float: left;
-  border-bottom: 3px solid #DBDBDB;
-  text-align: left;
-  font-family: Roboto-Medium;
-  font-size: 16px;
-  color: #C3C3C3;
-  line-height: 21px;
-}
-
-#pledge-headers .calendar {
-  width: 11%;
-  border-color: transparent;
-}
-
-#pledge-headers .company {
-  width: 58%;
-  margin-right: 2%;
-}
-
-#pledge-headers .laptops {
-  width: 29%;
-}
-
 #pledge-list {
   margin: 45px auto;
   max-width: 780px;
@@ -173,9 +143,48 @@ img {
   color: #020303;
 }
 
+#pledge-headers {
+  overflow: auto;
+}
+
+#pledge-headers .calendar,
+#pledge-headers .company,
+#pledge-headers .laptops {
+  float: left;
+  border-bottom: 3px solid #DBDBDB;
+  text-align: left;
+  font-size: 16px;
+  color: #C3C3C3;
+  line-height: 21px;
+}
+
+#pledge-headers .calendar {
+  width: 11%;
+  border-color: transparent;
+}
+
+#pledge-headers .company {
+  width: 58%;
+  margin-right: 2%;
+}
+
+#pledge-headers .laptops {
+  width: 29%;
+}
+
 @media (max-width: 600px) {
+  #pledge-headers .calendar,
+  .pledge .calendar {
+    width: 15%;
+  }
+
   .pledge .company {
     font-size: 18px;
+  }
+
+  #pledge-headers .laptops,
+  .pledge .laptops {
+    width: 25%;
   }
 
   .pledge .laptops {
@@ -183,11 +192,14 @@ img {
   }
 
   .calendar img {
-    visibility: hidden;
+    display: none;
   }
 
+  .calendar .day,
   .calendar .month {
     color: black;
+    position: static;
+    display: block;
   }
 }
 
