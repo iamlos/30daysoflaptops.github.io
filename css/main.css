@@ -78,7 +78,7 @@ img {
   max-width: 780px;
 }
 
-#pledge-list .group:nth-child(odd) {
+#pledge-list > .group:nth-child(odd) {
   background: #F2F2F2;
 }
 
