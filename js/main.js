@@ -17,6 +17,18 @@ app.controller("SampleCtrl", ["$scope", "$firebase",
 
     $scope.$watchCollection('pledges', groupPledges);
 
+    daysRemainingText = function() {
+      var end = moment('2014-12-20').zone(-8),
+          now = moment().zone(-8),
+          difference = end.diff(now);
+      if (difference > 0) {
+        return 'in ' + end.subtract(now).fromNow(true);
+      } else {
+        return 'is here';
+      };
+    }
+    $scope.daysRemaining = daysRemainingText();
+
     $scope.addPledge = function(email, company, laptops) {
       pledge = {
         email: email,
