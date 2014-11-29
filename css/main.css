@@ -231,7 +231,7 @@ img {
 
 .step {
   float: left;
-  width: 32%;
+  width: 50%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -248,11 +248,11 @@ img {
 
 @media (min-width: 600px) {
   .step:first-child {
-    padding-left: 0;
+    padding-left: 16%;
   }
 
   .step:last-child {
-    padding-right: 0;
+    padding-right: 16%;
   }
 }
 
